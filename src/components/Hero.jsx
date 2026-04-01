@@ -85,7 +85,7 @@ export default function Hero() {
             <p className="text-slate-400 font-body leading-relaxed max-w-lg mb-8 opacity-0 animate-[fadeInUp_0.6s_ease_0.55s_forwards]" style={{ fontSize: '1rem' }}>
               Blue Teamer in the making 🛡️ — building real-world SOC labs, crafting detection rules
               with Sigma & KQL, and hunting threats across the MITRE ATT&amp;CK matrix.
-              Seeking <span className="text-cyan-400 font-medium">SOC L1 roles in Europe & UK</span>.
+              Seeking <span className="text-cyan-400 font-medium">SOC L1 roles in Worldwide</span>.
             </p>
 
             {/* CTAs */}
