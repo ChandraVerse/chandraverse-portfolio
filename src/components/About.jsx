@@ -65,8 +65,8 @@ export default function About() {
               <div className="flex items-start gap-3 text-slate-400" style={{ fontSize: '0.9rem' }}>
                 <MapPin size={15} className="text-cyan-400 flex-shrink-0 mt-0.5" />
                 <span>
-                  Bhātpāra, West Bengal, India —{' '}
-                  <span className="text-cyan-400">targeting Europe &amp; UK</span>
+                  Kolkata, West Bengal, India —{' '}
+                  <span className="text-cyan-400">targeting Worldwide</span>
                 </span>
               </div>
               <div className="flex items-start gap-3 text-slate-400" style={{ fontSize: '0.9rem' }}>
@@ -78,7 +78,7 @@ export default function About() {
                 <span>
                   Seeking{' '}
                   <span className="text-cyan-400 font-medium">SOC Analyst L1</span>{' '}
-                  roles in Poland, Portugal, Germany, UK
+                  roles in India, Australia, Europe.
                 </span>
               </div>
               <div className="flex items-start gap-3 text-slate-400" style={{ fontSize: '0.9rem' }}>
