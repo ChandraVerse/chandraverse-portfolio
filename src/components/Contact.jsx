@@ -57,7 +57,7 @@ export default function Contact() {
           </h2>
           <div className="mt-3 w-16 h-0.5 bg-gradient-to-r from-cyan-400 to-transparent" />
           <p className="mt-4 text-slate-400 max-w-xl" style={{ fontSize: '0.95rem' }}>
-            Open to <span className="text-cyan-400 font-medium">SOC Analyst L1</span> opportunities in Europe & UK.
+            Open to <span className="text-cyan-400 font-medium">SOC Analyst L1</span> opportunities in India, Australia & Europe.
             Reach out for collaborations, opportunities, or just to talk security.
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function Contact() {
               <div>
                 <p className="font-mono text-xs text-amber-400/70 ls-wide uppercase tracking-wider mb-1">Location</p>
                 <p className="text-slate-300 text-sm">Currently in West Bengal, India</p>
-                <p className="text-slate-500 text-xs mt-0.5">Willing to relocate to Europe & UK for the right opportunity</p>
+                <p className="text-slate-500 text-xs mt-0.5">Willing to relocate to Europe & Australia for the right opportunity</p>
               </div>
             </div>
           </div>
