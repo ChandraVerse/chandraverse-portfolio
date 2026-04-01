@@ -135,7 +135,6 @@ function ProjectCard({ project }) {
 
   return (
     <div className="bg-[#050e1f] border border-cyan-400/10 rounded-xl overflow-hidden card-hover flex flex-col h-full">
-
       {/* Screenshot area */}
       <div className="relative h-52 bg-[#080f24] flex items-center justify-center overflow-hidden flex-shrink-0">
         {total > 0 ? (
@@ -175,10 +174,9 @@ function ProjectCard({ project }) {
               <span className="text-2xl">🔬</span>
             </div>
             <p className="font-mono text-xs text-cyan-400/50 uppercase tracking-wider">In Development</p>
-            <p className="font-body text-xs text-slate-600">Screenshots coming soon</p>
+            <p className="text-xs text-slate-600">Screenshots coming soon</p>
           </div>
         )}
-
         {/* Status badge */}
         <div className={`absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-mono ${
           project.status === 'completed'
@@ -236,6 +234,7 @@ export default function Projects() {
     <section id="projects" className="py-24 px-6 relative">
       <div className="max-w-6xl mx-auto">
 
+        {/* Section header — reveal is fine here, it never re-renders */}
         <div className="reveal mb-8">
           <p className="font-mono text-cyan-400 text-sm uppercase tracking-widest mb-2">&gt; ls -la ~/projects/</p>
           <h2 className="font-display font-bold text-white" style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', letterSpacing: '0.06em' }}>
@@ -244,7 +243,7 @@ export default function Projects() {
           <div className="mt-3 w-16 h-0.5 bg-gradient-to-r from-cyan-400 to-transparent" />
         </div>
 
-        {/* Filter buttons — NO reveal class here so clicks always register */}
+        {/* Filter buttons — no reveal class */}
         <div className="flex flex-wrap gap-3 mb-10">
           {FILTERS.map(({ val, label }) => (
             <button
@@ -262,18 +261,16 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* Grid */}
+        {/* Grid — cards rendered WITHOUT reveal wrapper so filter changes always show */}
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           {filtered.map(p => (
-            <div key={p.id} className="reveal">
-              <ProjectCard project={p} />
-            </div>
+            <ProjectCard key={p.id} project={p} />
           ))}
         </div>
 
         {filtered.length === 0 && (
           <div className="text-center py-16">
-            <p className="font-mono text-slate-600 text-sm">No projects found for this filter.</p>
+            <p className="font-mono text-slate-600 text-sm">No projects found.</p>
           </div>
         )}
       </div>
