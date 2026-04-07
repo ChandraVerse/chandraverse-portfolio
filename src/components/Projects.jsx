@@ -55,14 +55,19 @@ const projects = [
   {
     id: 4,
     title: 'XAI Network Intrusion Detection System',
-    status: 'in-progress',
+    status: 'completed',
     description:
-      'Explainable AI-Based Network IDS using ML models (Random Forest, XGBoost, LSTM) with SHAP explainability to make detection decisions interpretable. Features a Streamlit dashboard for real-time analysis and Docker deployment.',
-    tech: ['Python', 'Random Forest', 'XGBoost', 'LSTM', 'SHAP', 'Streamlit', 'Docker', 'Scikit-learn', 'Pandas'],
-    screenshots: [],
-    screenshotLabels: [],
+      'Production-grade Explainable AI Network IDS trained on CICIDS-2017 (2.8M flows, 14 attack classes). Combines Random Forest, XGBoost, and LSTM with a dual XAI layer — SHAP for tree models and LIME for all models including LSTM — surfaced in a live Streamlit dashboard. Ships with 42 passing tests, full CI/CD pipeline, and Docker deployment.',
+    tech: ['Python', 'Random Forest', 'XGBoost', 'LSTM', 'SHAP', 'LIME', 'Streamlit', 'Docker', 'Scikit-learn', 'TensorFlow', 'CICIDS-2017', 'GitHub Actions'],
+    screenshots: [
+      'https://raw.githubusercontent.com/ChandraVerse/xai-network-intrusion-detection/main/docs/screenshots/screenshot1_streamlit_dashboard.png',
+      'https://raw.githubusercontent.com/ChandraVerse/xai-network-intrusion-detection/main/docs/screenshots/screenshot2_model_comparison.png',
+      'https://raw.githubusercontent.com/ChandraVerse/xai-network-intrusion-detection/main/docs/screenshots/screenshot3_shap_summary.png',
+      'https://raw.githubusercontent.com/ChandraVerse/xai-network-intrusion-detection/main/docs/screenshots/screenshot4_dataset_distribution.png',
+    ],
+    screenshotLabels: ['Live Detection Dashboard', 'Model Comparison', 'SHAP Feature Importance', 'Dataset Distribution'],
     github: 'https://github.com/ChandraVerse/xai-network-intrusion-detection',
-    highlights: ['SHAP explainability layer', 'Multi-model ensemble', 'Real-time Streamlit UI', 'Docker deployment'],
+    highlights: ['Dual XAI layer — SHAP + LIME', '99.94% RF accuracy on CICIDS-2017', '42 tests · CI/CD green', 'Docker + Streamlit deployment'],
   },
   {
     id: 5,
