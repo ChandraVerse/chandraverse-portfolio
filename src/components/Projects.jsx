@@ -118,6 +118,54 @@ const projects = [
     github: 'https://github.com/ChandraVerse/Monitoring-Network-Traffic',
     highlights: ['Wireshark deep dive', 'HTTP/TCP/UDP analysis', 'Anomaly identification', 'Formal investigation report'],
   },
+  {
+    id: 8,
+    title: 'Zero Trust Network Access Lab',
+    status: 'in-progress',
+    description:
+      'Open-source ZTNA implementation using Keycloak (OIDC/MFA), WireGuard micro-segmentation, and Open Policy Agent (OPA) Rego policies. Formally evaluates attack surface reduction — 93.6% fewer exposed ports, 100% unauthenticated endpoints eliminated — with an IEEE-format security evaluation report and full NIST SP 800-207 compliance assessment.',
+    tech: ['Keycloak', 'WireGuard', 'OPA / Rego', 'Nginx', 'Suricata', 'Zeek', 'Wazuh', 'Ansible', 'Docker', 'Python', 'Prometheus', 'Grafana'],
+    screenshots: [],
+    screenshotLabels: [],
+    github: 'https://github.com/ChandraVerse/zero-trust-network-lab',
+    highlights: ['Keycloak OIDC + MFA identity plane', 'WireGuard 3-segment micro-segmentation', 'OPA ABAC policy enforcement', '−93.6% exposed ports after ZT'],
+  },
+  {
+    id: 9,
+    title: 'Blockchain Evidence Integrity System',
+    status: 'in-progress',
+    description:
+      'Tamper-proof forensic evidence management system anchoring SHA-256 evidence hashes to a private Ethereum / Hyperledger Fabric blockchain via Solidity smart contracts. Any single-bit modification to evidence produces a provably detectable hash mismatch. Outputs PDF chain-of-custody reports and STIX 2.1 observables — ISO/IEC 27037 and RFC 3161 aligned.',
+    tech: ['Solidity 0.8.x', 'Ethereum / Ganache', 'Hyperledger Fabric', 'Web3.py', 'Hardhat', 'Python', 'IPFS', 'FastAPI', 'React', 'STIX 2.1'],
+    screenshots: [],
+    screenshotLabels: [],
+    github: 'https://github.com/ChandraVerse/blockchain-evidence-integrity',
+    highlights: ['Immutable on-chain evidence registry', 'Cryptographic tamper detection', 'Chain-of-custody audit trail', 'STIX 2.1 + PDF report output'],
+  },
+  {
+    id: 10,
+    title: 'Automated Malware Analysis Sandbox',
+    status: 'in-progress',
+    description:
+      'Python-based dynamic malware analysis pipeline integrated with CAPE Sandbox (KVM/QEMU). Automatically detonates samples, extracts all IOCs (file hashes, network, registry, mutex, API call chains), maps behaviors to MITRE ATT&CK, scores severity with a custom weighted rule engine (LOW → CRITICAL), and generates multi-format threat reports with auto-generated Sigma detection rules.',
+    tech: ['CAPE Sandbox', 'Python', 'YARA', 'MITRE ATT&CK', 'VirusTotal API', 'AbuseIPDB', 'Celery', 'MongoDB', 'Docker', 'STIX 2.1', 'FastAPI'],
+    screenshots: [],
+    screenshotLabels: [],
+    github: 'https://github.com/ChandraVerse/malware-analysis-sandbox',
+    highlights: ['CAPE dynamic detonation pipeline', 'Custom severity scoring engine', 'Auto-generated Sigma rules', 'MITRE ATT&CK TTP mapping'],
+  },
+  {
+    id: 11,
+    title: 'Honeypot Threat Intelligence Platform',
+    status: 'in-progress',
+    description:
+      'T-Pot multi-service honeypot (Cowrie, Dionaea, Glastopf) deployed on a cloud VM and exposed to the public internet for a 30-day observation window, capturing 500,000+ real attack events from 12,500+ unique IPs. Enriched via Shodan, AbuseIPDB & VirusTotal, mapped to MITRE ATT&CK, and exported as a STIX 2.1 / MISP-compatible threat intelligence feed with a full IEEE research paper.',
+    tech: ['T-Pot 23.x', 'Cowrie', 'Dionaea', 'ELK Stack', 'Shodan API', 'AbuseIPDB', 'STIX 2.1', 'TAXII 2.0', 'MISP', 'Python', 'GeoPandas'],
+    screenshots: [],
+    screenshotLabels: [],
+    github: 'https://github.com/ChandraVerse/honeypot-threat-intelligence',
+    highlights: ['500,000+ real attack events captured', '12,500+ unique attacker IPs', 'STIX 2.1 / MISP TIP feed', '30-day IEEE research paper'],
+  },
 ]
 
 const FILTERS = [
